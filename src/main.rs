@@ -154,7 +154,7 @@ impl Calendar {
         } // verify if everything is ok
     } // end pass one day
 
-    pub fn maximum_days_for_this_month(&self) -> Option<u8> {
+    fn maximum_days_for_this_month(&self) -> Option<u8> {
         let mut maximum_days: Option<u8> = None;
         if self.month != None && self.year != None {
             maximum_days = match self.month.unwrap() {
